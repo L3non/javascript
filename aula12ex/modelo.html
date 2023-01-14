@@ -5,45 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Modelo de Exercício</title>
-   <style>
-      body{
-         background-color: #ccc;
-         font: normal 20px Verdana;
-      }
-
-      header > h1{
-         text-align: center;
-         margin: 35px 0;
-         color: white;
-      }
-
-      main{
-         margin: 0 auto;
-         width: 600px;
-         height: 400px;
-         background-color: white;
-         border-radius: 10px;
-         box-shadow: 1px 2px 4px 2px rgb(102, 102, 102);
-      }
-
-      main img{
-         margin: 0 auto;
-         display: block;
-         border-radius: 50%;
-      }
-
-      footer{
-         margin-top: 10px;
-         text-align: center;
-         color: white;
-      }
-
-      main > div > p{
-         text-align: center;
-         padding-top: 20px;
-         margin-bottom: 50px;
-      }
-   </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <!-- Header -->
@@ -71,28 +33,7 @@
    <!-- End Footer-->
 
    <!-- Scripts -->
-   <script>
-      var hour = new Date()
-      var h = hour.getHours()
-      var r = document.querySelector('p#res')
-      var i = document.querySelector('img#img')
-
-      r.innerHTML = `Agora são ${h} horas.`
-
-      if(h >= 5 && h <12){
-         document.body.style.background = '#FFCE82'
-         i.src = "manha.jpg"
-      } else if(h >= 12 && h <19){
-         document.body.style.background = '#AE6737'
-         i.src = "tarde.jpg"
-      } else if(h <= 24){
-         document.body.style.background = '#484A49'
-         i.src = "noite.jpg"
-      } else {
-         r.innerHTML = '[ERROR] Invalid Hour!'
-         i.src = null
-      }
-   </script>
+   <script src="script.js"></script>
    <!-- End Scripts-->
 </body>
 </html>

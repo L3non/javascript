@@ -1,0 +1,37 @@
+body{
+   background-color: #ccc;
+   font: normal 20px Verdana;
+}
+
+header > h1{
+   text-align: center;
+   margin: 35px 0;
+   color: white;
+}
+
+main{
+   margin: 0 auto;
+   width: 600px;
+   height: 400px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+main img{
+   margin: 0 auto;
+   display: block;
+   border-radius: 50%;
+}
+
+footer{
+   margin-top: 10px;
+   text-align: center;
+   color: white;
+}
+
+main > div > p{
+   text-align: center;
+   padding-top: 30px;
+   margin-bottom: 40px;
+}
